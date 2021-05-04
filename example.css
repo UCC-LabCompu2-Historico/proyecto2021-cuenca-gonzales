@@ -1,27 +1,36 @@
 #Menu{
     font-size: 15px;
-    width: 190px;
+    width: 193px;
     height: 70px;
     text-align: center;
     background-color:#CCCCCC;
-    position: static;
+    margin-top: -15px;
+    float: left;
 
 }
 #Logo{
     width: 200px;
     height: 150px;
+    
 }
 body{
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
 #Encabezado{
-    background-color:#ca7702;
+
     position: static;
+}
+header{
+        background-color:#ca7702;
 }
 #Contacto{
     margin-top:-120px;
     text-align: right;
     margin-bottom: 20px;
     margin-right: 10px;
+} 
+.Bottones{
+    margin-left: 3px;
+
 }

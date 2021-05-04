@@ -1,1 +1,10 @@
 -Que cosas elegir en los turnos?
+
+-profe 
+--Como funciona el Canvas?
+--Subir las paginas como se hace?
+--Ingresar valores con google form cuenta como input
+--Como organizar las carpetas y llamarlas bien en html
+--Como llamar a otras paginas tocando el boton
+--
+
