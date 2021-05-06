@@ -1,6 +1,9 @@
+html{
+    max-width: 2000px;
+}
 #Menu{
     font-size: 15px;
-    width: 193px;
+    width: 200px;
     height: 70px;
     text-align: center;
     background-color:#CCCCCC;
@@ -16,6 +19,7 @@
 body{
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 #Encabezado{
 
@@ -34,3 +38,31 @@ header{
     margin-left: 3px;
 
 }
+#HomeBody{
+    background-image: url("Imagenes/img7.jpeg");
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+    
+}
+#TecnolBody{
+    background-image: url("Imagenes/img1.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+    
+}
+#RecupCapBody{
+    background-image: url("Imagenes/img5.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+}
+#TratamientoBody{
+    background-image: url("Imagenes/img8.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+}
+#EvoBody{
+    background-image: url("Imagenes/img2.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+}
+
