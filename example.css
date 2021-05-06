@@ -19,7 +19,8 @@ html{
 body{
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    
+    overflow-x: hidden;
+    overflow-y: scroll; 
 }
 #Encabezado{
 
@@ -35,8 +36,12 @@ header{
     margin-right: 10px;
 } 
 .Bottones{
+    padding: 15px 95px;
+    text-align: center;
+    font-size: 12px;
     margin-left: 3px;
-
+    border-radius: 10px;    
+    margin-bottom: 3px;
 }
 #HomeBody{
     background-image: url("Imagenes/img7.jpeg");
@@ -65,4 +70,20 @@ header{
     background-repeat: no-repeat;
     background-size:  2000px 820px;
 }
+footer{
+        position: static;
+        left: 0;
+        bottom: 0;
+        height: 110px;
+        width: 100%;
+        background-color:#ca7702;
+        text-align: center;
+        padding:1em ;
+}
+a:link, a:visited{
+    color:black;
 
+}
+a:active{
+    font-weight: bold;
+}
