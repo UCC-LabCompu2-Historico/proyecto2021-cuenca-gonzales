@@ -70,6 +70,11 @@ header{
     background-repeat: no-repeat;
     background-size:  2000px 820px;
 }
+#CalendarioBody{
+    background-image: url("Imagenes/img6.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:  2000px 820px;
+}
 footer{
         position: static;
         left: 0;
@@ -87,3 +92,10 @@ a:link, a:visited{
 a:active{
     font-weight: bold;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }

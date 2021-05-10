@@ -8,3 +8,6 @@
 --Como llamar a otras paginas tocando el boton
 --
 
+Link calendario google forms: https://docs.google.com/forms/d/e/1FAIpQLSd7Yyna0mIINQoaz6A7vH8Js-YfH6620CGIR30fiNukUpkPEw/viewform?usp=sf_link
+Forma del a escrita antes
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Yyna0mIINQoaz6A7vH8Js-YfH6620CGIR30fiNukUpkPEw/viewform?usp=sf_link" target="_blank">
