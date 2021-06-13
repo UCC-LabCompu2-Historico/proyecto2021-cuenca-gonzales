@@ -9,6 +9,7 @@
     <meta content="Spa, Estetica, Tratamiento, Turnos Spa" name="keywords">
     <link rel="stylesheet" href="example.css" type="text/css">
     <link rel="shortcut icon" href="Imagenes/Logo-removebg-preview.png">
+    <script type="text/javascript" src="Funciones.js"></script>
 </head>
 <header>
     <img src="Imagenes/Logo-removebg-preview.png" alt="Logo Evo Estetica" id="Logo">
@@ -68,8 +69,11 @@
             <option>20:00</option>
             <option>20:30</option>
         </select>
-        <button type="submit" class="pedir_Turno">Pedir Turno</button>
+        <button type="submit" class="pedir_Turno" onclick="DibujarFact()">Pedir Turno</button>
     </div>
+    <canvas id="canvasdibujar" width="800px" height="600px" style="border:1px solid#D3D3D3">
+        Tu navegador no soporta el tag de HTML5 canvas.
+    </canvas>
 
 
 
