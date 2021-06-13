@@ -19,12 +19,12 @@
         Telefono: 3513876934
     </div><br>
     <nav>
-        <a href="Index.HTML"><button type="button" name="Home" class="Bottones">Home</button></a>
-        <a href="Evo.HTML"><button type="button" name="Evo" class="Bottones">Evo</button></a>
-        <a href="Tratamiento.HTML"><button type="button" name="Tratamiento" class="Bottones">Tratamiento</button></a>
-        <a href="RecupCap.HTML"><button type="button" name="Recup.Capilar" class="Bottones">Recup. Capilar</button></a>
-        <a href="Tecnol.HTML"><button type="button" name="Tecnol" class="Bottones">Tecnol</button></a>
-        <a href="Calendario.HTML"><button type="button" name="Turnos" class="Bottones">Turnos</button></a>
+        <button type="button" id="Home" name="Home" class="Bottones" onclick="cambiarPagina(this.id)">Home</button>
+        <button type="button" id="Evo" name="Evo" class="Bottones" onclick="cambiarPagina(this.id)">Evo</button>
+        <button type="button" id="Tratamiento" name="Tratamiento" class="Bottones" onclick="cambiarPagina(this.id)">Tratamiento</button>
+        <button type="button" id="RecupCapilar" name="RecupCapilar" class="Bottones" onclick="cambiarPagina(this.id)">Recup. Capilar</button>
+        <button type="button" id="Tecnol" name="Tecnol" class="Bottones" onclick="cambiarPagina(this.id)">Tecnol</button>
+        <button type="button" id="Turnos" name="Turnos" class="Bottones" onclick="cambiarPagina(this.id)">Turnos</button></a>
     </nav>
 </header>
 
@@ -51,8 +51,8 @@
         <label for="input_dia">Dia</label>
         <input type="date" class="form-control" id="input_dia">
     </div>
-    <div class="form-group">
-        <label class="my-1 mr-2" for="input_horario">Tema:</label>
+    <div class="form-horario">
+        <label class="my-1 mr-2" for="input_horario">Horario:</label>
         <select class="form-control" id="input_horario">
             <option>14:00</option>
             <option>14:30</option>
@@ -69,7 +69,19 @@
             <option>20:00</option>
             <option>20:30</option>
         </select>
-        <button type="submit" class="pedir_Turno" onclick="DibujarFact()">Pedir Turno</button>
+    </div>
+    <div class="form_Tratamiento">
+        <label class="my-1 mr-2" for="input_Tratamiento">Tipo de Tratamiento:</label>
+        <select class="form-control" id="input_Tratamiento" onchange="calcularPrecio(this.value)">
+            <option value="Tratamiento_Simple">Tratamiento Simple</option>
+            <option value="Tratamiento_Medio">Tratamiento Medio</option>
+            <option value="Tratamiento_Grande">Tratamiento Grande</option>
+            <option value="Recup_Capilar">Recup Capilar</option>
+            <option value="Tecnol_1">Tecnol 1</option>
+            <option value="Tecnol_1">Tecnol 2</option>
+        </select>
+        <button type="submit" class="pedir_Turno">Pedir Turno</button>
+        <span id="precio" name="precio" disabled ></span> 
     </div>
     <canvas id="canvasdibujar" width="800px" height="600px" style="border:1px solid#D3D3D3">
         Tu navegador no soporta el tag de HTML5 canvas.
@@ -82,10 +94,8 @@
             <img src="Imagenes/WppLog" height="45" width="45" alt="Logo de Whats app">
             3513876934
         </div>
-        <div class="footerIcons" id="Instagram">
-            <a href="https://www.instagram.com/mateocuenca09/?hl=es-la" target="_blank"><img
-                    src="Imagenes/InstragramLog" height="45" width="45" alt="Logo de Instagram">@mateocuenca09</a>
-
+        <div class="footerIcons" id="Instagram" style="margin-top: 30px;" onclick="cambiarPagina(this.id)"><img
+            src="Imagenes/InstragramLog" height="45" width="45" alt="Icono de Instagram" >@mateocuenca09
         </div>
 
     </footer>
