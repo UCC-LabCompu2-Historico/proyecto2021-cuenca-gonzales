@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e5af0ac-1206-4dae-af1d-a0dc3891a3eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calendario.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Calendario.HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Evo.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Evo.HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/Funciones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tratamiento.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tratamiento.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Index.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecupCap.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/RecupCap.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tecnol.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tecnol.HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.css" beforeDir="false" afterPath="$PROJECT_DIR$/example.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +54,8 @@
       <workItem from="1623692967130" duration="6487000" />
       <workItem from="1623702458239" duration="9000" />
       <workItem from="1623702486971" duration="26000" />
+      <workItem from="1623702951198" duration="582000" />
+      <workItem from="1623703556523" duration="618000" />
     </task>
     <servers />
   </component>
