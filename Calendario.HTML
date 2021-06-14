@@ -24,11 +24,11 @@
         <button type="button" id="Tratamiento" name="Tratamiento" class="Bottones" onclick="cambiarPagina(this.id)">Tratamiento</button>
         <button type="button" id="RecupCapilar" name="RecupCapilar" class="Bottones" onclick="cambiarPagina(this.id)">Recup. Capilar</button>
         <button type="button" id="Tecnol" name="Tecnol" class="Bottones" onclick="cambiarPagina(this.id)">Tecnol</button>
-        <button type="button" id="Turnos" name="Turnos" class="Bottones" onclick="cambiarPagina(this.id)">Turnos</button></a>
+        <button type="button" id="Turnos" name="Turnos" class="Bottones" onclick="cambiarPagina(this.id)">Turnos</button>
     </nav>
 </header>
 
-<body id="CalendarioBody">
+<body id="CalendarioBody" onload="cargarCan()">
     <div class="inputs_names">
         <label for="input_nombre">Nombre:</label>
         <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre"
@@ -53,26 +53,28 @@
     </div>
     <div class="form-horario">
         <label class="my-1 mr-2" for="input_horario">Horario:</label>
-        <select class="form-control" id="input_horario">
-            <option>14:00</option>
-            <option>14:30</option>
-            <option>15:00</option>
-            <option>15:30</option>
-            <option>16:00</option>
-            <option>16:30</option>
-            <option>17:00</option>
-            <option>17:30</option>
-            <option>18:00</option>
-            <option>18:30</option>
-            <option>19:00</option>
-            <option>19:30</option>
-            <option>20:00</option>
-            <option>20:30</option>
+        <select class="form-control" id="input_horario" >
+            <option hidden> </option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
         </select>
     </div>
     <div class="form_Tratamiento">
         <label class="my-1 mr-2" for="input_Tratamiento">Tipo de Tratamiento:</label>
-        <select class="form-control" id="input_Tratamiento" onchange="calcularPrecio(this.value)">
+        <select class="form-control" id="input_Tratamiento">
+            <option hidden> </option>
             <option value="Tratamiento_Simple">Tratamiento Simple</option>
             <option value="Tratamiento_Medio">Tratamiento Medio</option>
             <option value="Tratamiento_Grande">Tratamiento Grande</option>
@@ -80,14 +82,13 @@
             <option value="Tecnol_1">Tecnol 1</option>
             <option value="Tecnol_1">Tecnol 2</option>
         </select>
-        <button type="submit" class="pedir_Turno">Pedir Turno</button>
-        <span id="precio" name="precio" disabled ></span> 
+        <button class="pedir_Turno" id="peTurno" name="peTurno" onclick="DibujarFact()"  type="submit"
+                value=0>Pedir Turno</button>
+        <span id="precio" disabled ></span>
     </div>
-    <canvas id="canvasdibujar" width="800px" height="600px" style="border:1px solid#D3D3D3">
+    <canvas id="canvasdibujar" width="666px" height="466px" style="border:1px solid#D3D3D3">
         Tu navegador no soporta el tag de HTML5 canvas.
     </canvas>
-
-
 
     <footer>
         <div class="footerIcons" id="Whatsapp">
