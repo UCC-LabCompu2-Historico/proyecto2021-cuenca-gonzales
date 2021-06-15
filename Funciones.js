@@ -7,8 +7,8 @@
 let total = 0;
 
 function DibujarFact() {
-    let i = document.getElementsByName("peTurno")[0].value;
-    let cont = document.getElementsByName("peTurno")[0].value = Number(i) + 1;
+    let i = document.getElementsByName("geTurno")[0].value;
+    let cont = document.getElementsByName("geTurno")[0].value = Number(i) + 1;
     let canvas = document.getElementById('canvasdibujar');
     let ser = canvas.getContext("2d");
     let ctx = canvas.getContext("2d");
@@ -82,7 +82,7 @@ function DibujarFact() {
 
 
 /**
- * Cargar Canvas
+ * Cargar fondo del Canvas
  * @method cargarCanvas
  * @param {canvasdibujar} id-
  * @return VoidFunction
@@ -154,6 +154,16 @@ function calcularPrecio(host) {
         case "Tecnol_2":
             return 1200;
 
+    }
+
+}
+function pedirTurno() {
+    let nom = document.getElementById('input_nombre').value;
+    let ape = document.getElementById('input_apellido').value;
+    let email = document.getElementById('input_email').value;
+    let cel = document.getElementById('input_cell'.value);
+    if (nom === "" || ape === "" || email === "" || cel === "") {
+        alert("Porfavor Completar todo el formulario antes de pedir el turno");
     }
 
 }

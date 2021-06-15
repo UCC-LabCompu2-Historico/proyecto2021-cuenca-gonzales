@@ -56,48 +56,49 @@ header {
 #HomeBody {
     background-image: url("Imagenes/img7.jpeg");
     background-repeat: no-repeat;
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 
 }
 
 #TecnolBody {
     background-image: url("Imagenes/img1.jpeg");
     background-repeat: no-repeat;
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 
 }
 
 #RecupCapBody {
     background-image: url("Imagenes/img5.jpeg");
     background-repeat: no-repeat;
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 }
 
 #TratamientoBody {
     background-image: url("Imagenes/fondoTratamiento.jpg");
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 }
 
 #EvoBody {
     background-image: url("Imagenes/img2.jpeg");
     background-repeat: no-repeat;
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 }
 
 #CalendarioBody {
     background-image: url("Imagenes/img6.jpeg");
     background-repeat: no-repeat;
-    background-size: 2000px 100%;
+    background-size: 100% 100%;
 }
 
 footer {
     left: 0;
     bottom: 0;
-    height: 110px;
+    height: 10%;
     width: 100%;
     background-color: #ca7702;
     text-align: center;
     padding: 1em;
+
 }
 
 a:link, a:visited {
@@ -177,4 +178,48 @@ h4{
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+.imHome{
+    position: relative;
+    width: 20%;
+    height: 20%;
+}
+
+#frente{
+    width: 20%;
+    height: 20%;
+    margin-right:50%;
+    margin-left: 3%;
+}
+#caracDif{
+    text-align: center;
+}
+.imRecup{
+    position:  relative;
+}
+.sliderRecup {
+    float: right;
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderRecup ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite alternate;
+}
+
+.sliderRecup li {
+    width: 100%;
+    height: 550px;
+    list-style: none;
+}
+
+.sliderRecup img {
+    width: 100%;
+}
+.imTecnol{
+    height: 20%;
 }

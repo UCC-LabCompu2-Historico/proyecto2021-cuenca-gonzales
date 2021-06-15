@@ -36,77 +36,81 @@
 </header>
 
 <body id="CalendarioBody" onload="cargarCan()">
-<div class="inputs_names">
-    <label for="input_nombre">Nombre:</label>
-    <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre"
-           placeholder="Ingrese su Nombre">
-</div>
-<div class="inputs_names">
-    <label for="input_apellido">Apellido:</label>
-    <input type="text" class="form-control" id="input_apellido" aria-describedby="apellido"
-           placeholder="Ingrese su Apellido">
-</div>
-<div class="input_email">
-    <label for="input_email">Email</label>
-    <input type="text" class="form-control" id="input_email" placeholder="Ingrese su email">
-</div>
-<div class="input_cell">
-    <label for="input_cell">Numero de Celular</label>
-    <input type="number" class="form-control" id="input_cell" placeholder="Numero de Celular">
-</div>
-<div class="input_dia">
-    <label for="input_dia">Dia</label>
-    <input type="date" class="form-control" id="input_dia">
-</div>
-<div class="form-horario">
-    <label class="my-1 mr-2" for="input_horario">Horario:</label>
-    <select class="form-control" id="input_horario">
-        <option hidden></option>
-        <option value="14:00">14:00</option>
-        <option value="14:30">14:30</option>
-        <option value="15:00">15:00</option>
-        <option value="15:30">15:30</option>
-        <option value="16:00">16:00</option>
-        <option value="16:30">16:30</option>
-        <option value="17:00">17:00</option>
-        <option value="17:30">17:30</option>
-        <option value="18:00">18:00</option>
-        <option value="18:30">18:30</option>
-        <option value="19:00">19:00</option>
-        <option value="19:30">19:30</option>
-        <option value="20:00">20:00</option>
-        <option value="20:30">20:30</option>
-    </select>
-</div>
-<div class="form_Tratamiento">
-    <label class="my-1 mr-2" for="input_Tratamiento">Tipo de Tratamiento:</label>
-    <select class="form-control" id="input_Tratamiento">
-        <option hidden></option>
-        <option value="Tratamiento_Simple">Tratamiento Simple</option>
-        <option value="Tratamiento_Medio">Tratamiento Medio</option>
-        <option value="Tratamiento_Grande">Tratamiento Grande</option>
-        <option value="Recup_Capilar">Recup Capilar</option>
-        <option value="Tecnol_1">Tecnol 1</option>
-        <option value="Tecnol_1">Tecnol 2</option>
-    </select>
-    <button class="pedir_Turno" id="peTurno" name="peTurno" onclick="DibujarFact()" type="submit"
-            value=0>Pedir Turno
-    </button>
-</div>
-<canvas id="canvasdibujar" width="666px" height="466px" style="border:1px solid#D3D3D3">
-    Tu navegador no soporta el tag de HTML5 canvas.
-</canvas>
-
-<footer>
-    <div class="footerIcons" id="Whatsapp">
-        <img src="Imagenes/WppLog" height="45" width="45" alt="Logo de Whats app">
-        3513876934
+    <div class="inputs_names">
+        <label for="input_nombre">Nombre:</label>
+        <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre"
+            placeholder="Ingrese su Nombre">
     </div>
-    <div class="footerIcons" id="Instagram" style="margin-top: 30px;" onclick="cambiarPagina(this.id)"><img
-            src="Imagenes/InstragramLog" height="45" width="45" alt="Icono de Instagram">@mateocuenca09
+    <div class="inputs_names">
+        <label for="input_apellido">Apellido:</label>
+        <input type="text" class="form-control" id="input_apellido" aria-describedby="apellido"
+            placeholder="Ingrese su Apellido">
     </div>
+    <div class="input_email">
+        <label for="input_email">Email</label>
+        <input type="text" class="form-control" id="input_email" placeholder="Ingrese su email">
+    </div>
+    <div class="input_cell">
+        <label for="input_cell">Numero de Celular</label>
+        <input type="number" class="form-control" id="input_cell" placeholder="Numero de Celular">
+    </div>
+    <div class="input_dia">
+        <label for="input_dia">Dia</label>
+        <input type="date" class="form-control" id="input_dia">
+    </div>
+    <div class="form-horario">
+        <label class="my-1 mr-2" for="input_horario">Horario:</label>
+        <select class="form-control" id="input_horario">
+            <option hidden></option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+        </select>
+    </div>
+    <div class="form_Tratamiento">
+        <label class="my-1 mr-2" for="input_Tratamiento">Tipo de Tratamiento:</label>
+        <select class="form-control" id="input_Tratamiento">
+            <option hidden></option>
+            <option value="Tratamiento_Simple">Tratamiento Simple</option>
+            <option value="Tratamiento_Medio">Tratamiento Medio</option>
+            <option value="Tratamiento_Grande">Tratamiento Grande</option>
+            <option value="Recup_Capilar">Recup Capilar</option>
+            <option value="Tecnol_1">Tecnol 1</option>
+            <option value="Tecnol_1">Tecnol 2</option>
+        </select>
+        <button class="generar_Factura" id="geTurno" name="geTurno" onclick="DibujarFact()" type="submit"
+            value=0>Generar
+            Factura
+        </button>
+    </div>
+    <div>
+        <button id="peTurno" onclick="pedirTurno()">Pedir Turno</button>
+    </div>
+    <canvas id="canvasdibujar" width="666px" height="466px" style="border:1px solid#D3D3D3">
+        Tu navegador no soporta el tag de HTML5 canvas.
+    </canvas>
 
-</footer>
+    <footer>
+        <div class="footerIcons" id="Whatsapp">
+            <img src="Imagenes/WppLog" height="45" width="45" alt="Logo de Whats app">
+            3513876934
+        </div>
+        <div class="footerIcons" id="Instagram" style="margin-top: 30px;" onclick="cambiarPagina(this.id)"><img
+                src="Imagenes/InstragramLog" height="45" width="45" alt="Icono de Instagram">@mateocuenca09
+        </div>
+
+    </footer>
 </body>
 
 
