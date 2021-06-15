@@ -1,3 +1,9 @@
+/**
+ * Dibujar en Canvas la factura
+ * @method DibujarFact
+ * @param {string} id- el id de la pagina que quiere abrir
+ * @return voidFunction
+ */
 let total = 0;
 
 function DibujarFact() {
@@ -72,52 +78,15 @@ function DibujarFact() {
     ctx.fillText(total, 555, 403);
 
 
-    //const yMax = canvas.height;
-    //const xMax = canvas.width;
-
-
-    //ctx.fillRect(0, 0, xMax, yMax);
-    //*ctx.clearRect(0, 0, yMay, xMax);
-    //ctx.strokeRect(0, 0, xMax, yMax);
-
-
-    /*switch (cantPedir){
-        case 1:
-
-            break;
-        case 2:
-            ser.fillText(x,12,115);
-            ser.fillText(precio,555,115);
-            ser.fillText(hora,342,115);
-            break;
-        case 3:
-            ser.fillText(x,12,115);
-            ser.fillText(precio,555,115);
-            ser.fillText(hora,342,115);
-            break;
-        case 4:
-            ser.fillText(x,12,115);
-            ser.fillText(precio,555,115);
-            ser.fillText(hora,342,115);
-            break;
-        case 5:
-            ser.fillText(x,12,115);
-            ser.fillText(precio,555,115);
-            ser.fillText(hora,342,115);
-            break;
-
-    }*/
-
-
-    //ctx.strokeRect(xMax/3, 15, 277, 50);
-
-    //ctx.font="25pt Verdana";
-    //ctx.strokeStyle="green";
-    //ctx.lineWidth = 2;
-    //ctx.strokeText("strokeText",10,120);
-
 }
 
+
+/**
+ * Cargar Canvas
+ * @method cargarCanvas
+ * @param {canvasdibujar} id-
+ * @return VoidFunction
+ */
 function cargarCan() {
     let canvas = document.getElementById('canvasdibujar');
     let ctx = canvas.getContext("2d");
