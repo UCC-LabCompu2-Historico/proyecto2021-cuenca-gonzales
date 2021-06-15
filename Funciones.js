@@ -10,8 +10,8 @@ function DibujarFact() {
     let x = document.getElementById('input_Tratamiento').value;
     let precio = calcularPrecio(x);
     let hora = document.getElementById('input_horario').value;
-    total += precio;
 
+    total += precio;
     ser.fillStyle = "#ffffff";
     ser.fillRect(555, 390, 100, 18);
 
@@ -39,18 +39,21 @@ function DibujarFact() {
             break;
         default:
             alert("No hay mas Tratamientos");
+            total = total - precio;
 
     }
-
-    ctx.fillText(total, 555, 403);
-
 
     if ((precio === undefined) || (hora === "")) {
         canvas.width = canvas.width;
         cargarCan();
         alert("Faltan datos!");
-        cont = document.getElementsByName("peTurno")[0].value = cont - 1;
+        cont = document.getElementsByName("peTurno")[0].value = cont - 1; z
     }
+
+    ctx.fillText(total, 555, 403);
+
+
+
 
     //const yMax = canvas.height;
     //const xMax = canvas.width;
