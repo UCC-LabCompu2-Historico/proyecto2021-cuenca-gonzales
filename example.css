@@ -24,8 +24,8 @@ body {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll;    
-    text-shadow: -1px -1px 0.5px rgb(255, 255, 255), 1px 1px 0.5px rgb(255,255,255), -1px 1px 0.5px rgb(255, 255, 255), 1px -1px 0.5px rgb(255, 255, 255);
+    overflow-y: scroll;
+    text-shadow: -1px -1px 0.5px rgb(255, 255, 255), 1px 1px 0.5px rgb(255, 255, 255), -1px 1px 0.5px rgb(255, 255, 255), 1px -1px 0.5px rgb(255, 255, 255);
 }
 
 #Encabezado {
@@ -172,31 +172,35 @@ h1 {
     text-decoration: underline;
 }
 
-h4{
+h4 {
     color: #ca7702;
 }
 
 input[type=number] {
     -moz-appearance: textfield;
 }
-.imHome{
+
+.imHome {
     position: relative;
     width: 20%;
     height: 20%;
 }
 
-#frente{
+#frente {
     width: 20%;
     height: 20%;
-    margin-right:50%;
+    margin-right: 50%;
     margin-left: 3%;
 }
-#caracDif{
+
+#caracDif {
     text-align: center;
 }
-.imRecup{
-    position:  relative;
+
+.imRecup {
+    position: relative;
 }
+
 .sliderRecup {
     float: right;
     width: 20%;
@@ -220,6 +224,7 @@ input[type=number] {
 .sliderRecup img {
     width: 100%;
 }
-.imTecnol{
+
+.imTecnol {
     height: 20%;
 }

@@ -1,7 +1,6 @@
 /**
  * Dibujar en Canvas la factura
  * @method DibujarFact
- * @param {string} id- el id de la pagina que quiere abrir
  * @return voidFunction
  */
 let total = 0;
@@ -71,8 +70,6 @@ function DibujarFact() {
         canvas.width = canvas.width;
         cargarCan();
         alert("Faltan datos!");
-        cont = document.getElementsByName("peTurno")[0].value = cont - 1;
-        z
     }
 
     ctx.fillText(total, 555, 403);
@@ -84,7 +81,6 @@ function DibujarFact() {
 /**
  * Cargar fondo del Canvas
  * @method cargarCanvas
- * @param {canvasdibujar} id-
  * @return VoidFunction
  */
 function cargarCan() {
@@ -102,8 +98,6 @@ function cargarCan() {
 /**
  * Cambiar de pagina
  * @method cambiarPagina
- * @param {string} id- el id de la pagina que quiere abrir
- * @return Valor que retorna
  */
 function cambiarPagina(id) {
     switch (id) {
@@ -136,7 +130,7 @@ function cambiarPagina(id) {
 /**
  * Mostrar en pantalla el precio segun la opcion elegida
  * @method calcularPrecio
- * @return Valor que retorna
+ * @return Precio
  * @param host
  */
 function calcularPrecio(host) {
@@ -157,13 +151,20 @@ function calcularPrecio(host) {
     }
 
 }
+
+/**
+ * Verificador de datos completados
+ * @method pedirTurno
+ * @return void
+ */
 function pedirTurno() {
     let nom = document.getElementById('input_nombre').value;
     let ape = document.getElementById('input_apellido').value;
     let email = document.getElementById('input_email').value;
     let cel = document.getElementById('input_cell'.value);
     if (nom === "" || ape === "" || email === "" || cel === "") {
-        alert("Porfavor Completar todo el formulario antes de pedir el turno");
+        alert("Por favor completar todo el formulario antes de pedir el turno");
+    } else {
+        alert("Se ha solicitado el turno")
     }
-
 }

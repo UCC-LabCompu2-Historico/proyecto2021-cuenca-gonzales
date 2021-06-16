@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9e5af0ac-1206-4dae-af1d-a0dc3891a3eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calendario.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Calendario.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evo.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Evo.HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/Funciones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Index.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecupCap.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/RecupCap.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tecnol.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tecnol.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tratamiento.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tratamiento.HTML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.css" beforeDir="false" afterPath="$PROJECT_DIR$/example.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Funciones.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1twvRe1WobT1StXQpY3j6Kt466K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,6 +62,9 @@
       <workItem from="1623703556523" duration="618000" />
       <workItem from="1623781199079" duration="1659000" />
       <workItem from="1623785251013" duration="455000" />
+      <workItem from="1623804031549" duration="784000" />
+      <workItem from="1623804956816" duration="65000" />
+      <workItem from="1623805057212" duration="21000" />
     </task>
     <servers />
   </component>
