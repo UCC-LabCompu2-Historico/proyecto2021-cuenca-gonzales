@@ -4,13 +4,7 @@
     <list default="true" id="9e5af0ac-1206-4dae-af1d-a0dc3891a3eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calendario.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Calendario.HTML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evo.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Evo.HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/Funciones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Index.HTML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecupCap.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/RecupCap.HTML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecnol.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tecnol.HTML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tratamiento.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/Tratamiento.HTML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.css" beforeDir="false" afterPath="$PROJECT_DIR$/example.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +39,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,6 +60,7 @@
       <workItem from="1623804031549" duration="784000" />
       <workItem from="1623804956816" duration="65000" />
       <workItem from="1623805057212" duration="21000" />
+      <workItem from="1624593659425" duration="12583000" />
     </task>
     <servers />
   </component>

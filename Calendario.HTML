@@ -38,28 +38,28 @@
 <body id="CalendarioBody" onload="cargarCan()">
 <div class="inputs_names">
     <label for="input_nombre">Nombre:</label>
-    <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre"
-           placeholder="Ingrese su Nombre">
+    <input type="text" pattern="[a-z]{1,15}" class="form-control" id="input_nombre" aria-describedby="nombre"
+           placeholder="Ingrese su Nombre" onchange="check(this.id)">
 </div>
 <div class="inputs_names">
     <label for="input_apellido">Apellido:</label>
-    <input type="text" class="form-control" id="input_apellido" aria-describedby="apellido"
-           placeholder="Ingrese su Apellido">
+    <input type="text"  class="form-control" id="input_apellido" aria-describedby="apellido"
+           placeholder="Ingrese su Apellido" onchange="check(this.id)">
 </div>
 <div class="input_email">
     <label for="input_email">Email</label>
-    <input type="text" class="form-control" id="input_email" placeholder="Ingrese su email">
+    <input type="email" class="form-control" id="input_email" placeholder="Ingrese su email" onchange="check(this.id)">
 </div>
 <div class="input_cell">
     <label for="input_cell">Numero de Celular</label>
-    <input type="number" class="form-control" id="input_cell" placeholder="Numero de Celular">
+    <input type="number" class="form-control" id="input_cell" placeholder="Numero de Celular" >
 </div>
 <div class="input_dia">
     <label for="input_dia">Dia</label>
     <input type="date" class="form-control" id="input_dia">
 </div>
 <div class="form-horario">
-    <label class="my-1 mr-2" for="input_horario">Horario:</label>
+    <label class="my-1 mr-2" for="input_horario" >Horario:</label>
     <select class="form-control" id="input_horario">
         <option hidden></option>
         <option value="14:00">14:00</option>

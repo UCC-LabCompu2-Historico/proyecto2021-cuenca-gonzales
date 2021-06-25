@@ -6,6 +6,7 @@
 let total = 0;
 
 function DibujarFact() {
+
     let i = document.getElementsByName("geTurno")[0].value;
     let cont = document.getElementsByName("geTurno")[0].value = Number(i) + 1;
     let canvas = document.getElementById('canvasdibujar');
@@ -73,6 +74,7 @@ function DibujarFact() {
     }
 
     ctx.fillText(total, 555, 403);
+    document.getElementById('input_Tratamiento').option.setAttribute("disabled","disabled");
 
 
 }
@@ -123,8 +125,6 @@ function cambiarPagina(id) {
             window.open("https://www.instagram.com/mateocuenca09/?hl=es-la");
             break;
     }
-
-
 }
 
 /**
@@ -166,5 +166,74 @@ function pedirTurno() {
         alert("Por favor completar todo el formulario antes de pedir el turno");
     } else {
         alert("Se ha solicitado el turno")
+    }
+}
+function check(e) {
+    const patronL = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const patronD = patronL + "+-_.0123456789@";
+
+    let auxN=0;
+    let auxA=0;
+    let auxAr=0;
+    let auxD=0;
+    let auxP=0;
+    switch (e)
+    {
+        case "input_nombre":
+            let nombre = document.getElementById('input_nombre').value;
+            let sizen = document.getElementById('input_nombre').value.length;
+            for (let i=0;i<sizen;i++){
+                for(let j=0;j<patronL.length;j++)
+                {
+                    if(nombre[i]===patronL[j]){
+                        auxN++;
+                    }
+                }
+            }
+            if(auxN!==nombre.length){
+                alert("Ingrese un nombre valido");
+                document.getElementById('input_nombre').value="";
+            }
+            break;
+        case "input_apellido":
+            let size = document.getElementById('input_apellido').value.length;
+            let ape = document.getElementById('input_apellido').value;
+            for (let i=0;i<size;i++){
+                for(let j=0;j<patronL.length;j++)
+                {
+                    if(ape[i]===patronL[j]){
+                        auxA++;
+                    }
+                }
+            }
+            if(auxA!==ape.length){
+                alert("Ingrese un apellido valido");
+                document.getElementById('input_apellido').value="";
+            }
+            break;
+        case "input_email":
+            let email = document.getElementById('input_email').value;
+            let sizee = document.getElementById('input_email').value.length;
+            for (let i=0;i<sizee;i++){
+                for(let j=0;j<patronD.length;j++)
+                {
+                    if(email[i]===patronD[j]) {
+                        auxD++;
+                    }
+                }
+                if(email[i]==="@"){
+                    auxAr++;
+                }
+                if(email[i]==="."){
+                    auxP++;
+                }
+
+            }
+            if(auxD!==email.length||auxAr!==1||auxP<1){
+                alert("Ingrese un email valido");
+                document.getElementById('input_email').value="";
+            }
+            break;
+
     }
 }
