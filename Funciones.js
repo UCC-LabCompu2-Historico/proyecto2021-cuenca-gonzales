@@ -124,6 +124,12 @@ function cambiarPagina(id) {
         case "Instagram":
             window.open("https://www.instagram.com/mateocuenca09/?hl=es-la");
             break;
+        case "Electro":
+            window.open("Electro.HTML","_self");
+            break;
+        case "Spa":
+            window.open("Spa.HTML","_self");
+            break;
     }
 }
 
