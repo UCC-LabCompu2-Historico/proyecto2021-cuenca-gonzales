@@ -18,6 +18,11 @@ function DibujarFact() {
     let hora = document.getElementById('input_horario').value;
     let fecha = document.getElementById("input_dia").value;
 
+    const value = document.getElementById('input_Tratamiento').value;
+    let option = document.getElementById('input_Tratamiento').querySelector(`option[value="${value}"]`);
+    option.disabled = true;
+    document.getElementById('input_Tratamiento').value = "";
+
     total += precio;
     ser.fillStyle = "#ffffff";
     ser.fillRect(555, 390, 100, 18);
@@ -171,7 +176,12 @@ function pedirTurno() {
     if (nom === "" || ape === "" || email === "" || cel === "") {
         alert("Por favor completar todo el formulario antes de pedir el turno");
     } else {
-        alert("Se ha solicitado el turno")
+        alert("Se ha solicitado el turno");
+        document.getElementById('input_nombre').value="";
+        document.getElementById('input_apellido').value="";
+        document.getElementById('input_email').value="";
+        document.getElementById('input_cell').value="";
+        window.location.reload();
     }
 }
 function check(e) {
