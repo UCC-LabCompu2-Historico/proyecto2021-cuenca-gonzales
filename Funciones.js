@@ -99,6 +99,15 @@ function cargarCan() {
     fondo.onload = function () {
         ctx.drawImage(fondo, 0, 0)
     };
+    let canvas2 = document.getElementById('canvasanima');
+    let ctx2 = canvas2.getContext("2d");
+
+    ctx2.fillStyle = "#ffffff";
+    ctx2.fillRect(0,0 ,666,50);
+    fondo2.onload = function () {
+        ctx2.drawImage(fondo2, 0, 0)
+    };
+
 }
 
 
@@ -176,12 +185,11 @@ function pedirTurno() {
     if (nom === "" || ape === "" || email === "" || cel === "") {
         alert("Por favor completar todo el formulario antes de pedir el turno");
     } else {
-        alert("Se ha solicitado el turno");
+        animar();
         document.getElementById('input_nombre').value = "";
         document.getElementById('input_apellido').value = "";
         document.getElementById('input_email').value = "";
         document.getElementById('input_cell').value = "";
-        window.location.reload();
     }
 }
 
@@ -255,4 +263,30 @@ function check(e) {
             break;
 
     }
+}
+var posicionX = 5;
+function animar() {
+    setInterval("canvascargando(),100")
+}
+function canvascargando() {
+    let contexto = document.getElementById('canvasanima').getContext("2d");
+    contexto.fillStyle = "#ca7702";
+    contexto.fillRect(posicionX,5,40,40);
+    if (posicionX>655)
+    {   contexto.fillStyle = "#ffffff";
+        contexto.fillRect(0,0 ,666,50);
+        contexto.font = "24pt Sin Serif";
+        contexto.fillStyle = 'black';
+        var string = "Se ha pedido el turno!"
+        contexto.fillText(string,200,35)
+    }
+    if (posicionX>755){
+        window.location.reload();
+        alert("Se ha solicitado el turno");
+
+
+    }
+    posicionX=10+posicionX;
+
+
 }
