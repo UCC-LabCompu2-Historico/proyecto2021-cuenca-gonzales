@@ -103,7 +103,7 @@ function cargarCan() {
     let ctx2 = canvas2.getContext("2d");
 
     ctx2.fillStyle = "#ffffff";
-    ctx2.fillRect(0,0 ,666,50);
+    ctx2.fillRect(0, 0, 666, 50);
     fondo2.onload = function () {
         ctx2.drawImage(fondo2, 0, 0)
     };
@@ -264,29 +264,43 @@ function check(e) {
 
     }
 }
+
+/**
+ * Setea el intervalo de tiempo llamando a la funcion canvascargando
+ * @method animar
+ * @return void
+ * @param onload
+ */
 var posicionX = 5;
+
 function animar() {
     setInterval("canvascargando(),100")
 }
+
+/**
+ * Dibuja una linea que simula la carga de datos
+ * @method canvascargando
+ * @return void
+ */
 function canvascargando() {
     let contexto = document.getElementById('canvasanima').getContext("2d");
     contexto.fillStyle = "#ca7702";
-    contexto.fillRect(posicionX,5,40,40);
-    if (posicionX>655)
-    {   contexto.fillStyle = "#ffffff";
-        contexto.fillRect(0,0 ,666,50);
+    contexto.fillRect(posicionX, 5, 40, 40);
+    if (posicionX > 655) {
+        contexto.fillStyle = "#ffffff";
+        contexto.fillRect(0, 0, 666, 50);
         contexto.font = "24pt Sin Serif";
         contexto.fillStyle = 'black';
         var string = "Se ha pedido el turno!"
-        contexto.fillText(string,200,35)
+        contexto.fillText(string, 200, 35)
     }
-    if (posicionX>755){
+    if (posicionX > 755) {
         window.location.reload();
         alert("Se ha solicitado el turno");
 
 
     }
-    posicionX=10+posicionX;
+    posicionX = 10 + posicionX;
 
 
 }
